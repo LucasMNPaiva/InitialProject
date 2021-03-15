@@ -21,15 +21,17 @@ namespace EventProject.Migrations
                     b.Property<int>("EventId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("EventDate");
-
-                    b.Property<string>("EventLocal");
-
-                    b.Property<string>("EventName");
+                    b.Property<DateTime>("Date");
 
                     b.Property<string>("EventUrl");
 
+                    b.Property<string>("Local");
+
                     b.Property<string>("LotPurchase");
+
+                    b.Property<string>("Name");
+
+                    b.Property<int>("NmrPeoples");
 
                     b.HasKey("EventId");
 

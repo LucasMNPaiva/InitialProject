@@ -49,4 +49,5 @@ namespace EventProject.Controllers
     public void Delete(int id)
     {
     }
-  
+  }
+}

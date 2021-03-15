@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EventProject.Migrations
 {
-    public partial class init : Migration
+    public partial class ProAgilProjects : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,9 +13,10 @@ namespace EventProject.Migrations
                 {
                     EventId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    EventName = table.Column<string>(nullable: true),
-                    EventLocal = table.Column<string>(nullable: true),
-                    EventDate = table.Column<DateTime>(nullable: false),
+                    Name = table.Column<string>(nullable: true),
+                    Local = table.Column<string>(nullable: true),
+                    Date = table.Column<DateTime>(nullable: false),
+                    NmrPeoples = table.Column<int>(nullable: false),
                     LotPurchase = table.Column<string>(nullable: true),
                     EventUrl = table.Column<string>(nullable: true)
                 },
